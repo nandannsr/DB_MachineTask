@@ -5,8 +5,8 @@ This module initializes and configures the FastAPI application.
 import uvicorn
 from fastapi import FastAPI
 
-from app.database import create_db_and_tables
-from app.routers.contacts import router as contacts_router
+from database import create_db_and_tables
+from routers.contacts import router as contacts_router
 
 # Create FastAPI application
 app = FastAPI(

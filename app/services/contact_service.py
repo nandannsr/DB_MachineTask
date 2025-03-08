@@ -5,7 +5,7 @@ This module contains business logic for contact operations.
 from fastapi import HTTPException
 from sqlmodel import Session, select
 
-from app.models.contact import Contact
+from models.contact import Contact
 
 
 def create_contact(contact: Contact, session: Session) -> Contact:

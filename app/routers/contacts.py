@@ -7,9 +7,9 @@ from typing import Annotated, List
 from fastapi import APIRouter, Depends, Query
 from sqlmodel import Session
 
-from app.database import get_session
-from app.models.contact import Contact
-from app.services.contact_service import (
+from database import get_session
+from models.contact import Contact
+from services.contact_service import (
     create_contact,
     get_contact_by_id,
     get_contacts,
